@@ -1,0 +1,18 @@
+{% extends 'layout.html'%}
+{% block body %}
+<div>
+    <Form action="/create_blog" method="POST" class="flex col">
+        {{ form.hidden_tag() }}
+        {% for field in form %}
+        <div  class="flex col t-1">
+            {% if field.widget.input_type != 'hidden'  %}
+            {{field.label(style="padding-bottom: 10px;")}}
+            {{ field(size=20, placeholder=field.name) }} 
+            {% endif %}
+        </div>
+        {% endfor %}
+
+        <button type="submit" class="t-1">CREATE</button>
+    </Form>
+</div>
+{% endblock %}

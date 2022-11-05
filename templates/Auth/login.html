@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+{% block body %}
+<div class="flex h-center">
+
+    <div class="center-card">
+        <h1>Login</h1>
+        <div>
+        <Form action="/login" method="POST" class="flex col">
+            {{ form.hidden_tag() }}
+            {% for field in form %}
+            <div  class="flex col t-1">
+                {% if field.widget.input_type != 'hidden'  %}
+                {{field.label(style="padding-bottom: 10px;")}}
+                {{ field(size=20, placeholder=field.name) }} 
+                {% endif %}
+            </div>
+            {% endfor %}
+
+            <button type="submit" class="t-1">Login</button>
+        </Form>
+    </div>
+</div>
+</div>
+{% endblock %}
