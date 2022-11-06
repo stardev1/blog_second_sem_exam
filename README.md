@@ -1,6 +1,6 @@
 # Blog ![laptop](./static/laptop.png)
 
-## Second Semester Exam Project
+## Alt School Afrfica Second Semester Exam Project
 
 ![python3.10.3](https://img.shields.io/badge/Python-3.10.3-green) ![flask](https://img.shields.io/badge/Flask-2.2.2-yellow) ![PyMySQL](https://img.shields.io/badge/PyMySQL-1.0.2-red) ![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-1.4.42-blue) ![WTForms](https://img.shields.io/badge/WTForms-3.0.1-green)
 
